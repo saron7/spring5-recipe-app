@@ -1,4 +1,4 @@
-package guru.springgramework.spring5recipeapp.domain;
+package guru.springframework.spring5recipeapp.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
