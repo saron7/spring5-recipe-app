@@ -1,7 +1,11 @@
 package guru.springframework.spring5recipeapp.repositories;
 
-import guru.springframework.spring5recipeapp.domain.UnitofMeasure;
+import guru.springframework.spring5recipeapp.domain.UnitOfMeasure;
 import org.springframework.data.repository.CrudRepository;
 
-public interface UnitOfMeasureRepository extends CrudRepository<UnitofMeasure, Long> {
+import java.util.Optional;
+
+public interface UnitOfMeasureRepository extends CrudRepository<UnitOfMeasure, Long> {
+
+    Optional<UnitOfMeasure> findByDescription(String description);
 }
